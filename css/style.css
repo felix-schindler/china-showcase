@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,700');
 
 
-
-body{
+body {
   font-family: 'IBM Plex Mono', monospace;
   margin: 0;
 }
 
-.hero-wrapper{
+.hero-wrapper {
   position: relative;
   height: 100vh;
 }
 
-#hero{
+.hero-img {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -21,39 +20,40 @@ body{
   width: 100%;
 }
 
-.hero-img{
+.hero-img-sky {
+  z-index: 1;
   background-image: url("../imgs/china.jpg");
 }
 
-.shadow{
-  display: none;
-}
-
-a{
-   text-decoration: underline;
-   color: inherit;
-   font-weight: 400;
-}
-
-a:hover{
-  font-weight: 500;
-  color: red;
-}
-
-.hero-img-mask{
+.hero-img-mask {
   z-index: 3;
-  /* background-image: url("../imgs/mask.png"); */
+  background-image: url("../imgs/mask.png");
   background-size: 100% !important;
   background-position: bottom;
 }
 
-.parallax-h1{
+.shadow {
+  display: none;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+  font-weight: 400;
+}
+
+a:hover {
+  font-weight: 500;
+  color: red;
+}
+
+.parallax-h1 {
   position: absolute;
   height: 100vh;
   left: 4%;
 }
 
-.hero-title{
+.hero-title {
   position: absolute;
   font-weight: 700;
   font-size: 20vw;
@@ -63,7 +63,7 @@ a:hover{
   bottom: 10%;
 }
 
-.about-wrapper{
+.about-wrapper {
   position: relative;
   display: grid;
   grid-template-columns: auto auto;
@@ -77,28 +77,28 @@ a:hover{
   margin-bottom: 100px;
 }
 
-.about-text-wrapper{
+.about-text-wrapper {
   width: 75%;
 }
 
-.about-h1{
+.about-h1 {
   font-weight: 700;
   font-size: 2.5em;
   padding-bottom: 20px;
 }
 
-.about-body{
+.about-body {
   font-weight: 300;
   font-size: 1.15em;
   line-height: 27px;
 }
 
-.parallax-about-img{
+.parallax-about-img {
   position: relative;
   height: 100%;
 }
 
-.about-img{
+.about-img {
   position: relative;
   width: 100%;
   max-width: 390px;
@@ -109,7 +109,7 @@ a:hover{
   /* box-shadow: 0 20px 80px -30px rgba(0,0,0,0.35); */
 }
 
-.img-gallery-wrapper{
+.img-gallery-wrapper {
   position: relative;
   list-style: none;
   height: 100%;
@@ -125,7 +125,7 @@ a:hover{
   margin-bottom: 130px;
 }
 
-.img-gallery-wrapper img{
+.img-gallery-wrapper img {
   position: relative;
   width: 100%;
   border: 0;
@@ -133,18 +133,18 @@ a:hover{
   padding-bottom: 7px;
 }
 
-.grid-two-imgs{
+.grid-two-imgs {
   height: 410px;
 }
 
-.stripGallery{
+.stripGallery {
   min-width: 800px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.strip{
+.strip {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 10px;
@@ -155,19 +155,19 @@ a:hover{
   left: 50%;
   transform: translate3d(-50%, 0, 0);
   padding-bottom: 120px;
-  }
+}
 
-.column{
+.column {
   position: relative;
   width: 100%;
 }
 
-.columnImages{
+.columnImages {
   padding-bottom: 7px;
   width: 100%;
 }
 
-source{
+source {
   margin: 0;
   padding: 0;
   border: 0;
@@ -179,20 +179,20 @@ source{
   text-align: center;
 }
 
-.columnTextWrap h1{
+.columnTextWrap h1 {
   font-weight: 700;
   font-size: 3em;
   margin: 0;
 }
 
-.columnTextWrap h2{
+.columnTextWrap h2 {
   font-weight: 400;
   font-size: 18px;
   margin: 0;
   padding-top: 10px;
 }
 
-.aboutMe{
+.aboutMe {
   position: relative;
   font-size: 1em;
   text-align: center;
@@ -200,78 +200,71 @@ source{
   padding-bottom: 30px;
 }
 
-.aboutMe a{
+.aboutMe a {
   font-weight: 600;
   font-size: 1.5em;
   text-decoration: underline;
 }
 
-.aboutMe i{
+.aboutMe i {
   font-weight: 400;
   font-size: 1.5em;
   opacity: 0.5;
   padding-top: 40px
 }
 
-.aboutMe i:hover{
+.aboutMe i:hover {
   opacity: 1;
 }
 
-.crop{
+.crop {
   margin-top: -3.8px;
 }
 
 /* No greater than 900px, no less than 400px */
 @media (min-width:1500px) {
 
-/* CHINA title */
-  .hero-title{
+  /* CHINA title */
+  .hero-title {
     bottom: 10%;
   }
 
 }
 
-@media only screen and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 
-  body{
+  body {
     -webkit-text-size-adjust: 100%;
   }
 
-  .about-wrapper{
+  .about-wrapper {
     grid-template-columns: auto auto;
   }
 
-  .about-text-wrapper{
+  .about-text-wrapper {
     width: 90%;
   }
 
-  .about-img{
+  .about-img {
     transform: translateY(40px);
   }
 
-  .about-wrapper{
+  .about-wrapper {
     margin-top: 100px;
   }
 
-  .img-gallery-wrapper{
-  }
-
-  .hero-wrapper{
+  .hero-wrapper {
     height: 100vh;
   }
 
-  .hero-title{
+  .hero-title {
     bottom: 4%;
     font-size: 24vw;
   }
-
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 767px) and (orientation : portrait) {
-
-  body{
+  body {
     -webkit-text-size-adjust: 100%;
   }
 
@@ -281,17 +274,17 @@ and (orientation : portrait) {
     background-position: 85% 100%;
   }
 
-  .hero-wrapper{
+  .hero-wrapper {
     position: relative;
     height: 100vh;
   }
 
-  .hero-title{
+  .hero-title {
     bottom: 63%;
     font-size: 30vw;
   }
 
-  .about-wrapper{
+  .about-wrapper {
     position: relative;
     display: grid;
     grid-template-columns: auto;
@@ -305,45 +298,45 @@ and (orientation : portrait) {
     margin-bottom: 40px;
   }
 
-  .about-text-wrapper{
+  .about-text-wrapper {
     padding-right: 20px;
     font-weight: 200;
     width: 90%;
     padding-bottom: 120px;
   }
 
-  .about-h1{
+  .about-h1 {
     font-weight: 700;
     font-size: 3.5em;
     padding-bottom: 20px;
   }
 
-  .about-body{
+  .about-body {
     font-weight: 400;
     font-size: 40px;
     line-height: 1.6em;
     width: 105%;
   }
 
-  .about-body a{
+  .about-body a {
     font-weight: 800;
   }
 
-  .img-gallery-wrapper{
+  .img-gallery-wrapper {
     width: 90%
   }
 
-  .strip{
+  .strip {
     width: 90%;
   }
 
-  .about-img{
+  .about-img {
     /* max-width: 100%;
     transform: translateY(0); */
     display: none;
   }
 
-  .img-gallery-wrapper{
+  .img-gallery-wrapper {
     grid-template-columns: auto auto;
   }
 
@@ -356,15 +349,15 @@ and (orientation : portrait) {
     font-size: 2em;
   }
 
-  .columnTextWrap h2{
+  .columnTextWrap h2 {
     font-size: 40px;
   }
 
-  .strip{
+  .strip {
     grid-template-columns: 1fr 1fr;
   }
 
-  .aboutMe{
+  .aboutMe {
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
